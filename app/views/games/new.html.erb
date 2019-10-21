@@ -1,0 +1,12 @@
+<h1>Word Game!</h1>
+
+<p>Letters: <%= @letters  %></p></div>
+
+<form id="form" action="/score" method="get">
+  <input id="input" type="text" name="answer" placeholder="type your word">
+  <input type="hidden" name="letters" value="<%= @letters  %>" >
+  <input id="submit" type="submit" value="play">
+</form>
+
+
+
